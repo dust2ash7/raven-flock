@@ -24,7 +24,7 @@ Static single page at repo root:
 | `script.js` | Intro storyboard gallery (auto-fade + click-through; reduced-motion safe) |
 | `logo.svg` / `favicon.svg` | Compact hand-drawn flock mark + wordmark |
 
-Intro frames (branch → eye → reflection → logo) are embedded as compressed JPEGs in `script.js` so the Pages deploy stays self-contained without binary MCP uploads.
+Intro frames (branch → eye → reflection → logo) live under `assets/*.js` as compressed JPEG data URIs (GitHub MCP cannot push raw binaries). `script.js` drives the click-through / auto-fade gallery.
 
 ## GitHub Pages
 
