@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Raven Flock mark">
+  <rect width="64" height="64" rx="12" fill="#F5F0E6"/>
+  <circle cx="32" cy="28" r="16" fill="#D4A574" opacity="0.18"/>
+  <g fill="#1C1917" transform="translate(32,30)">
+    <ellipse cx="0" cy="4" rx="14" ry="9"/>
+    <circle cx="12" cy="-6" r="7"/>
+    <path d="M18 -7 L28 -2 L19 1 Z"/>
+    <path d="M-8 0 C-18 -10,-22 4,-8 10 C0 13,8 7,11 2 C4 6,-2 5,-8 0 Z" fill="#2A2622"/>
+    <circle cx="14" cy="-8" r="1.4" fill="#F5F0E6"/>
+    <path d="M24 -3 L28 -2 L25 -1 Z" fill="#D4A574"/>
+    <g transform="translate(-18,-10) scale(0.45)">
+      <ellipse cx="0" cy="4" rx="14" ry="9" fill="#2A2622"/>
+      <circle cx="12" cy="-6" r="7" fill="#2A2622"/>
+      <path d="M18 -7 L26 -3 L19 0 Z" fill="#2A2622"/>
+    </g>
+  </g>
+</svg>

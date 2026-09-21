@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Raven Flock — quiet tools, with care. Home of Stillpoint, a calm meditation companion." />
+  <meta name="theme-color" content="#F5F0E6" />
+  <title>Raven Flock — Quiet tools, with care</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Raven Flock home">
+      <img src="favicon.svg" width="36" height="36" alt="" />
+      <span class="brand-name">Raven Flock</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#intro">Intro</a>
+      <a href="#stillpoint">Stillpoint</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-logo" src="logo.svg" width="320" height="120" alt="Raven Flock — three ravens and wordmark" />
+      <h1 id="hero-title">Raven Flock</h1>
+      <p class="lede" style="margin-left:auto;margin-right:auto;text-align:center">
+        Quiet tools. A reminder you are not forgotten.
+      </p>
+      <p class="tag">Consider the ravens</p>
+      <hr class="hero-rule" />
+    </section>
+
+    <section class="section intro" id="intro" aria-labelledby="intro-title">
+      <div class="section-inner">
+        <span class="section-label">Storyboard</span>
+        <h2 id="intro-title">Intro</h2>
+        <div class="storyboard" aria-roledescription="carousel" aria-label="Intro storyboard">
+          <div id="storyboard-stage"></div>
+          <div class="storyboard-caption">
+            <div>
+              <p><strong>Intro</strong> — motion cut coming</p>
+              <p class="note">Branch → eye → flock in reflection → mark</p>
+            </div>
+            <div class="storyboard-controls">
+              <button type="button" class="btn-icon" id="storyboard-prev" aria-label="Previous frame">‹</button>
+              <div class="dots" id="storyboard-dots" role="tablist" aria-label="Storyboard frames"></div>
+              <button type="button" class="btn-icon" id="storyboard-next" aria-label="Next frame">›</button>
+              <button type="button" class="btn-icon" id="storyboard-pause" aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stillpoint" aria-labelledby="stillpoint-title">
+      <div class="section-inner">
+        <span class="section-label">Featured</span>
+        <h2 id="stillpoint-title">Stillpoint</h2>
+        <article class="featured-card">
+          <div class="stillpoint-visual" aria-hidden="true">
+            <div>
+              <p class="mark">Stillpoint</p>
+              <p class="sub">Meditation</p>
+            </div>
+          </div>
+          <div class="featured-copy">
+            <h3>A quiet place to return to</h3>
+            <p>
+              Stillpoint is a calm meditation companion — soft light, gentle pacing,
+              and space to breathe. No streaks to chase. Just a still point when you need one.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://dust2ash7.itch.io/stillpoint" rel="noopener noreferrer">
+                Play on itch.io
+              </a>
+              <a class="btn btn-secondary" href="https://dust2ash7.github.io/Meditation-App/" rel="noopener noreferrer">
+                Open web app
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title" style="background:var(--nest);border-top:1px solid rgba(28,25,23,0.06)">
+      <div class="section-inner">
+        <span class="section-label">Studio</span>
+        <h2 id="about-title">About</h2>
+        <p>
+          Raven Flock makes quiet tools and small games that feel like care —
+          a soft reminder that you are seen, and that provision often arrives
+          before you notice you needed it.
+        </p>
+        <p>
+          We keep the work calm and human: warm cream, deep navy, a little gold at the edges.
+          Scripture can sit as a footnote or a tagline; the work itself stays invitational, never a sermon.
+        </p>
+        <p class="quiet">“Consider the ravens…” — Luke 12:24</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Raven Flock · <a href="https://github.com/dust2ash7">dust2ash7</a></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
