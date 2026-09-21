@@ -1,13 +1,19 @@
 /* Raven Flock — intro storyboard gallery */
 (function () {
+  const frames = [
+    { src: "assets/01-branch.jpg", alt: "A raven perched on a misty branch at dusk", fallback: "assets/01-branch.svg" },
+    { src: "assets/02-eye.jpg", alt: "Close-up of a raven eye reflecting the horizon", fallback: "assets/02-eye.svg" },
+    { src: "assets/03-reflection.jpg", alt: "Three ravens reflected in a raven's eye", fallback: "assets/03-reflection.svg" },
+    { src: "assets/04-logo.jpg", alt: "Raven Flock logo — three ravens and wordmark", fallback: "assets/04-logo.svg" }
+  ];
+
   function boot() {
-    const frames = (window.RF_FRAMES || []).filter(Boolean);
     const stage = document.getElementById("storyboard-stage");
     const dots = document.getElementById("storyboard-dots");
     const prevBtn = document.getElementById("storyboard-prev");
     const nextBtn = document.getElementById("storyboard-next");
     const pauseBtn = document.getElementById("storyboard-pause");
-    if (!stage || !dots || frames.length === 0) return;
+    if (!stage || !dots) return;
 
     let index = 0;
     let timer = null;
@@ -20,11 +26,15 @@
       fig.setAttribute("data-index", String(i));
       fig.setAttribute("aria-hidden", i === 0 ? "false" : "true");
       const img = document.createElement("img");
-      img.src = f.src;
+      img.src = f.fallback;
       img.alt = f.alt;
       img.loading = i === 0 ? "eager" : "lazy";
-      img.width = 720;
-      img.height = 405;
+      img.width = 800;
+      img.height = 450;
+      const probe = new Image();
+      probe.onload = function () { img.src = f.src; };
+      probe.onerror = function () { /* keep SVG */ };
+      probe.src = f.src;
       fig.appendChild(img);
       stage.appendChild(fig);
 
@@ -52,23 +62,12 @@
     }
 
     function next() { go(index + 1, false); }
-    function prev() { go(index - 1, true); }
+    function restart() { stop(); if (playing) start(); }
+    function start() { stop(); timer = setInterval(next, INTERVAL); }
+    function stop() { if (timer) clearInterval(timer); timer = null; }
 
-    function restart() {
-      stop();
-      if (playing) start();
-    }
-    function start() {
-      stop();
-      timer = setInterval(next, INTERVAL);
-    }
-    function stop() {
-      if (timer) clearInterval(timer);
-      timer = null;
-    }
-
-    if (prevBtn) prevBtn.addEventListener("click", prev);
-    if (nextBtn) nextBtn.addEventListener("click", () => { go(index + 1, true); });
+    if (prevBtn) prevBtn.addEventListener("click", () => go(index - 1, true));
+    if (nextBtn) nextBtn.addEventListener("click", () => go(index + 1, true));
     if (pauseBtn) {
       pauseBtn.addEventListener("click", () => {
         playing = !playing;
@@ -92,9 +91,6 @@
     }
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", boot);
-  } else {
-    boot();
-  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
+  else boot();
 })();

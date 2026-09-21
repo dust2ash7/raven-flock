@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Three ravens in reflection">
+  <rect width="800" height="450" fill="#1C1917"/>
+  <circle cx="400" cy="230" r="150" fill="#0a1220"/>
+  <defs><radialGradient id="r" cx="50%" cy="50%"><stop offset="40%" stop-color="#D4A574"/><stop offset="100%" stop-color="#1a2744"/></radialGradient></defs>
+  <circle cx="400" cy="230" r="110" fill="url(#r)" opacity="0.85"/>
+  <g fill="#1C1917" opacity="0.9">
+    <g transform="translate(340,230) scale(0.55)"><ellipse cx="0" cy="0" rx="28" ry="12"/><path d="M-20 -5 C-10 -35,10 -35,20 -5 Z"/></g>
+    <g transform="translate(400,200) scale(0.7)"><ellipse cx="0" cy="0" rx="28" ry="12"/><path d="M-20 -5 C-10 -40,10 -40,20 -5 Z"/></g>
+    <g transform="translate(460,230) scale(0.55)"><ellipse cx="0" cy="0" rx="28" ry="12"/><path d="M-20 -5 C-10 -35,10 -35,20 -5 Z"/></g>
+  </g>
+  <text x="40" y="50" fill="#C9A66B" font-family="Georgia,serif" font-size="18">03 — Reflection</text>
+</svg>

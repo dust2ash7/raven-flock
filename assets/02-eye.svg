@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Raven eye close-up">
+  <rect width="800" height="450" fill="#1C1917"/>
+  <ellipse cx="400" cy="220" rx="220" ry="160" fill="#2A2622"/>
+  <circle cx="400" cy="220" r="70" fill="#0a1220"/>
+  <circle cx="400" cy="220" r="48" fill="#3d2a18"/>
+  <circle cx="400" cy="220" r="22" fill="#1C1917"/>
+  <circle cx="415" cy="205" r="8" fill="#F5F0E6" opacity="0.7"/>
+  <path d="M180 120 C260 80, 340 100, 400 140" fill="none" stroke="#D4A574" stroke-width="3" opacity="0.5"/>
+  <text x="40" y="50" fill="#C9A66B" font-family="Georgia,serif" font-size="18">02 — Eye</text>
+</svg>

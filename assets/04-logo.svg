@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Raven Flock logo">
+  <rect width="800" height="450" fill="#F5F0E6"/>
+  <g fill="#1C1917" transform="translate(400,180)">
+    <g transform="translate(-90,20) scale(0.7)"><ellipse cx="0" cy="6" rx="22" ry="12"/><circle cx="18" cy="-8" r="10"/><path d="M26 -9 L42 -2 L28 2Z"/><path d="M-10 0 C-28 -16,-32 8,-8 16Z" fill="#2A2622"/></g>
+    <g><ellipse cx="0" cy="6" rx="26" ry="14"/><circle cx="22" cy="-10" r="12"/><path d="M32 -12 L52 -2 L34 2Z"/><path d="M-12 0 C-34 -20,-40 10,-10 20Z" fill="#2A2622"/><path d="M40 -4 L52 -2 L42 0Z" fill="#D4A574"/></g>
+    <g transform="translate(90,20) scale(0.7)"><ellipse cx="0" cy="6" rx="22" ry="12"/><circle cx="18" cy="-8" r="10"/><path d="M26 -9 L42 -2 L28 2Z"/><path d="M-10 0 C-28 -16,-32 8,-8 16Z" fill="#2A2622"/></g>
+  </g>
+  <text x="400" y="320" text-anchor="middle" font-family="Georgia,serif" font-size="36" letter-spacing="6" fill="#1C1917">RAVEN FLOCK</text>
+  <text x="400" y="355" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#C9A66B" font-style="italic">Consider the ravens.</text>
+  <text x="40" y="50" fill="#C9A66B" font-family="Georgia,serif" font-size="18">04 — Logo</text>
+</svg>
