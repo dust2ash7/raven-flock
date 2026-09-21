@@ -24,11 +24,11 @@ Static single page at repo root:
 | `script.js` | Intro storyboard gallery (auto-fade + click-through; reduced-motion safe) |
 | `logo.svg` / `favicon.svg` | Compact hand-drawn flock mark + wordmark |
 
-Intro frames (branch → eye → reflection → logo): compressed JPEG photos are stored as base64 text chunks in `assets/chunks/` and assembled by `frames-loader.js` (MCP cannot push raw binary images). Stylized SVG placeholders remain in `assets/*.svg`. `script.js` drives the gallery.
+Intro frames (branch → eye → reflection → logo) ship as stylized SVG storyboard art under `assets/*.svg`. Optional compressed JPEG photo frames can be assembled from base64 text chunks in `assets/chunks/` via `frames-loader.js` when complete; the gallery falls back to the SVGs. (GitHub MCP cannot push raw binary images.)
 
 ## GitHub Pages
 
-Workflow: `.github/workflows/pages.yml` deploys from the repository root on push to `main` using official `actions/configure-pages`, `upload-pages-artifact`, and `deploy-pages`.
+Workflow: `.github/workflows/pages.yml` deploys from the repository root on push to `main` using official `actions/configure-pages` (with `enablement: true`), `upload-pages-artifact`, and `deploy-pages`.
 
 If the site does not appear after the first successful workflow run, the founder may need a one-time enable in **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
