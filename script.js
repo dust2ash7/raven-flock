@@ -1,5 +1,12 @@
 /* Raven Flock — intro storyboard gallery */
 (function () {
+  const FALLBACK = [
+    { src: "assets/01-branch.svg", alt: "A raven perched on a misty branch at dusk" },
+    { src: "assets/02-eye.svg", alt: "Close-up of a raven eye reflecting the horizon" },
+    { src: "assets/03-reflection.svg", alt: "Three ravens reflected in a raven's eye" },
+    { src: "assets/04-logo.svg", alt: "Raven Flock logo — three ravens and wordmark" }
+  ];
+
   function boot(frames) {
     const stage = document.getElementById("storyboard-stage");
     const dots = document.getElementById("storyboard-dots");
@@ -55,10 +62,26 @@
       if (pauseBtn) { pauseBtn.setAttribute("aria-pressed", "true"); pauseBtn.textContent = "▶"; pauseBtn.setAttribute("aria-label", "Play slideshow"); }
     } else start();
   }
+
   function startWhenReady() {
-    if (window.RF_FRAMES && window.RF_FRAMES.length) boot(window.RF_FRAMES);
-    else window.addEventListener("rf-frames-ready", function () { boot(window.RF_FRAMES); }, { once: true });
+    if (window.RF_FRAMES && window.RF_FRAMES.length === 4) {
+      boot(window.RF_FRAMES);
+      return;
+    }
+    let settled = false;
+    function useFallback() {
+      if (settled) return;
+      settled = true;
+      boot(FALLBACK);
+    }
+    window.addEventListener("rf-frames-ready", function () {
+      if (settled) return;
+      settled = true;
+      boot(window.RF_FRAMES && window.RF_FRAMES.length ? window.RF_FRAMES : FALLBACK);
+    }, { once: true });
+    setTimeout(useFallback, 2500);
   }
+
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", startWhenReady);
   else startWhenReady();
 })();
