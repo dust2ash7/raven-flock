@@ -1,10 +1,10 @@
 /* Raven Flock — intro storyboard gallery */
 (function () {
   const frames = [
-    { src: "assets/01-branch.jpg", alt: "A raven perched on a misty branch at dusk", fallback: "assets/01-branch.svg" },
-    { src: "assets/02-eye.jpg", alt: "Close-up of a raven eye reflecting the horizon", fallback: "assets/02-eye.svg" },
-    { src: "assets/03-reflection.jpg", alt: "Three ravens reflected in a raven's eye", fallback: "assets/03-reflection.svg" },
-    { src: "assets/04-logo.jpg", alt: "Raven Flock logo — three ravens and wordmark", fallback: "assets/04-logo.svg" }
+    { src: "assets/01-branch.svg", alt: "A raven perched on a misty branch at dusk" },
+    { src: "assets/02-eye.svg", alt: "Close-up of a raven eye reflecting the horizon" },
+    { src: "assets/03-reflection.svg", alt: "Three ravens reflected in a raven's eye" },
+    { src: "assets/04-logo.svg", alt: "Raven Flock logo — three ravens and wordmark" }
   ];
 
   function boot() {
@@ -23,18 +23,13 @@
     frames.forEach((f, i) => {
       const fig = document.createElement("figure");
       fig.className = "storyboard-frame" + (i === 0 ? " is-active" : "");
-      fig.setAttribute("data-index", String(i));
       fig.setAttribute("aria-hidden", i === 0 ? "false" : "true");
       const img = document.createElement("img");
-      img.src = f.fallback;
+      img.src = f.src;
       img.alt = f.alt;
       img.loading = i === 0 ? "eager" : "lazy";
-      img.width = 800;
-      img.height = 450;
-      const probe = new Image();
-      probe.onload = function () { img.src = f.src; };
-      probe.onerror = function () { /* keep SVG */ };
-      probe.src = f.src;
+      img.width = 480;
+      img.height = 270;
       fig.appendChild(img);
       stage.appendChild(fig);
 
@@ -78,8 +73,7 @@
       });
     }
 
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (reduce.matches) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       playing = false;
       if (pauseBtn) {
         pauseBtn.setAttribute("aria-pressed", "true");
