@@ -24,7 +24,7 @@ Static single page at repo root:
 | `script.js` | Intro storyboard gallery (auto-fade + click-through; reduced-motion safe) |
 | `logo.svg` / `favicon.svg` | Compact hand-drawn flock mark + wordmark |
 
-Intro frames (branch → eye → reflection → logo) ship under `assets/*.svg` with compressed storyboard photos embedded as JPEG data URIs (MCP cannot push raw binary images). `script.js` drives the click-through / auto-fade gallery.
+Intro frames (branch → eye → reflection → logo): compressed JPEG photos are stored as base64 text chunks in `assets/chunks/` and assembled by `frames-loader.js` (MCP cannot push raw binary images). Stylized SVG placeholders remain in `assets/*.svg`. `script.js` drives the gallery.
 
 ## GitHub Pages
 
