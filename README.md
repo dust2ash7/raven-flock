@@ -1,13 +1,13 @@
 # Raven Flock
 
-Quiet tools, with care. Studio site for [dust2ash7](https://github.com/dust2ash7).
+Quiet tools. A reminder you are not forgotten. Studio site for [dust2ash7](https://github.com/dust2ash7).
 
 **Live:** https://dust2ash7.github.io/raven-flock/
 
 ## Brand
 
 - **Studio:** Raven Flock  
-- **Feel:** quiet tools / “Consider the ravens” (Luke 12:24 — care & providence, calm not preachy)  
+- **Feel:** quiet tools / “Consider the ravens” (Luke 12:24 — providence, calm not preachy)  
 - **Palette:** parchment cream `#F5F0E6`, raven charcoal `#1C1917`, dawn amber `#D4A574`, muted sky `#7BA3A8`  
 - **Featured product:** [Stillpoint](https://dust2ash7.itch.io/stillpoint) (meditation) — also on [GitHub Pages](https://dust2ash7.github.io/Meditation-App/)
 
@@ -30,7 +30,7 @@ Intro frames (branch → eye → reflection → logo) ship as stylized SVG story
 
 Workflow: `.github/workflows/pages.yml` deploys from the repository root on push to `main` using official `actions/configure-pages` (with `enablement: true`), `upload-pages-artifact`, and `deploy-pages`.
 
-If the site does not appear after the first successful workflow run, the founder may need a one-time enable in **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+A second workflow (`.github/workflows/static.yml`) also deploys static content to Pages. Source should stay **GitHub Actions** in repo Settings → Pages.
 
 ## Local preview
 
