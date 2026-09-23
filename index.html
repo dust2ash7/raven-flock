@@ -41,23 +41,48 @@
 
     <section class="section intro" id="intro" aria-labelledby="intro-title">
       <div class="section-inner">
-        <span class="section-label">Storyboard</span>
+        <span class="section-label">Studio</span>
         <h2 id="intro-title">Intro</h2>
-        <div class="storyboard" aria-roledescription="carousel" aria-label="Intro storyboard">
-          <div id="storyboard-stage"></div>
-          <div class="storyboard-caption">
-            <div>
-              <p><strong>Intro</strong> — motion cut coming</p>
-              <p class="note">Branch → eye → flock in reflection → mark</p>
-            </div>
-            <div class="storyboard-controls">
-              <button type="button" class="btn-icon" id="storyboard-prev" aria-label="Previous frame">‹</button>
-              <div class="dots" id="storyboard-dots" role="tablist" aria-label="Storyboard frames"></div>
-              <button type="button" class="btn-icon" id="storyboard-next" aria-label="Next frame">›</button>
-              <button type="button" class="btn-icon" id="storyboard-pause" aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
+        <p class="intro-lede">
+          Branch → eye → flock in reflection → mark.
+        </p>
+        <div id="intro-video-wrap" class="intro-video-wrap">
+          <video
+            id="intro-video"
+            class="intro-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            controls
+            preload="metadata"
+            poster="assets/raven-flock-intro-poster.jpg"
+            src="assets/raven-flock-intro.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <p class="intro-video-caption">
+            Intro — raven on a branch to the Raven Flock mark.
+          </p>
+        </div>
+        <details class="storyboard-fallback">
+          <summary>Storyboard stills</summary>
+          <div class="storyboard" aria-roledescription="carousel" aria-label="Intro storyboard">
+            <div id="storyboard-stage"></div>
+            <div class="storyboard-caption">
+              <div>
+                <p><strong>Storyboard</strong> — still frames</p>
+                <p class="note">Branch → eye → flock in reflection → mark</p>
+              </div>
+              <div class="storyboard-controls">
+                <button type="button" class="btn-icon" id="storyboard-prev" aria-label="Previous frame">‹</button>
+                <div class="dots" id="storyboard-dots" role="tablist" aria-label="Storyboard frames"></div>
+                <button type="button" class="btn-icon" id="storyboard-next" aria-label="Next frame">›</button>
+                <button type="button" class="btn-icon" id="storyboard-pause" aria-label="Pause slideshow" aria-pressed="false">❚❚</button>
+              </div>
             </div>
           </div>
-        </div>
+        </details>
       </div>
     </section>
 
