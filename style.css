@@ -448,3 +448,72 @@ h3 { font-size: 1.25rem; margin: 0 0 0.5rem; }
   margin-top: 1rem;
 }
 
+
+/* Product subtitle under section h2 */
+.product-subtitle {
+  margin: -0.5rem 0 0;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+/* Life Formed visual — garden / cream / teal */
+.life-formed-visual {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 45% 55%, rgba(123, 163, 168, 0.35), transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(212, 165, 116, 0.28), transparent 45%),
+    linear-gradient(165deg, #FFFBF5 0%, #E8F0EF 45%, #7BA3A8 100%);
+  display: grid;
+  place-items: center;
+  color: var(--navy);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.life-formed-visual .mark {
+  font-family: Georgia, serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.life-formed-visual .sub {
+  margin: 0.5rem 0 0;
+  color: var(--teal);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Labor Pulse visual — warm cream / amber, calm not clinical */
+.labor-pulse-visual {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(212, 165, 116, 0.4), transparent 55%),
+    linear-gradient(160deg, #FFFBF5 0%, #F5F0E6 40%, #E8D5C0 100%);
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.labor-pulse-visual .mark {
+  font-family: Georgia, serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.labor-pulse-visual .sub {
+  margin: 0.5rem 0 0;
+  color: var(--amber);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
