@@ -517,3 +517,80 @@ h3 { font-size: 1.25rem; margin: 0 0 0.5rem; }
   text-transform: uppercase;
   font-weight: 600;
 }
+
+/* Newer tools */
+.more-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.more-card {
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: var(--nest);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(28, 25, 23, 0.06);
+}
+
+@media (min-width: 720px) {
+  .more-card {
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+  }
+}
+
+.more-visual {
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.more-visual .mark {
+  font-family: Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.more-visual .sub {
+  margin: 0.45rem 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.more-visual.meridian {
+  color: #F4EFE6;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(201, 166, 107, 0.45), transparent 55%),
+    linear-gradient(165deg, #1a2744 0%, #2F5D45 100%);
+}
+.more-visual.meridian .sub { color: #C9A66B; }
+
+.more-visual.kitchen {
+  color: #1F2A24;
+  background:
+    radial-gradient(circle at 40% 45%, rgba(184, 97, 60, 0.28), transparent 50%),
+    linear-gradient(160deg, #FFFDF8 0%, #F4EFE6 50%, #2F5D45 140%);
+}
+.more-visual.kitchen .sub { color: #B8613C; }
+
+.more-visual.sentinel {
+  color: #F5F0E6;
+  background:
+    radial-gradient(circle at 60% 35%, rgba(212, 165, 116, 0.35), transparent 50%),
+    linear-gradient(165deg, #1C1917 0%, #1a2744 100%);
+}
+.more-visual.sentinel .sub { color: #D4A574; }
+
+.more-copy p {
+  margin: 0 0 1rem;
+  color: var(--ink-soft);
+}
