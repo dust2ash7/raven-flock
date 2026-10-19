@@ -14,6 +14,9 @@ Studio site for [dust2ash7](https://github.com/dust2ash7).
 | **Labor Pulse** | Tools | [app](https://dust2ash7.github.io/Labor-Pulse/) · [studio](https://dust2ash7.github.io/raven-flock/#labor-pulse) · [GitHub](https://github.com/dust2ash7/Labor-Pulse) — quiet labor companion (not a medical device) |
 | **Life Formed** | Coming soon | [Play teaser](https://dust2ash7.github.io/life-formed-play/) — Soft Mastery tend-garden; *Tend the Garden. Bring order to the chaos.* |
 | **Aerie** | Live | [web](https://dust2ash7.github.io/Aerie/) — a quiet room to make a song |
+| **Meridian Atlas** | Live | [app](https://dust2ash7.github.io/meridian-atlas/) · [GitHub](https://github.com/dust2ash7/meridian-atlas) — field guide to points, channels, and Chinese herbs (educational only, not medical advice) |
+| **Microbiome Kitchen** | Live | [app](https://dust2ash7.github.io/Microbiome-Kitchen/) · [GitHub](https://github.com/dust2ash7/Microbiome-Kitchen) — beginner whole-food meals for gut and brain |
+| **Sentinel Strength** | Live | [app](https://dust2ash7.github.io/Sentinel-Strength/) · [GitHub](https://github.com/dust2ash7/Sentinel-Strength) — bodyweight training for physical jobs |
 
 ## Local preview
 
